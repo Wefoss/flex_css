@@ -4,66 +4,31 @@
   padding: 0;
 }
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.2rem;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.logo {
-  font-size: 2em;
-}
-
-.head {
-  padding: 0 50px;
+.list-li {
+  max-width: 400px;
+  border: 1px solid lightseagreen;
+  padding: 10px;
+  margin: 10px;
   display: flex;
   justify-content: space-between;
-  background-color: lightseagreen;
   align-items: center;
+  flex-wrap: wrap;
+}
+.content {
+  flex-grow: 0.5;
 }
 
-li.list-item {
+.content:last-child {
+  text-align: center;
+  margin: 10px auto;
+  padding-left: 10px;
+}
+
+.content:first-child {
+  margin-left: auto;
+}
+
+span {
+  text-align: center;
   display: inline-block;
-}
-
-.link {
-  color: white;
-  text-decoration: none;
-}
-
-.main {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex: 1;
-}
-
-.article {
-  border-radius: 5px;
-  margin: 10px;
-}
-p {
-  border: 2px solid lightskyblue;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-
-
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.footer p {
-  border:  none;
-  text-align: center;
-  border-radius: 0px;
-  background-color: mediumaquamarine;
-  margin-top: auto;
 }
