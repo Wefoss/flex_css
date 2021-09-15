@@ -7,7 +7,7 @@
 body {
   font-size: 1.3rem;
   color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
 }
 
 ul {
@@ -20,44 +20,46 @@ a {
 }
 
 .logo {
-  font-size: 2em;
-  
+  font-size: 1.5em;
+  text-transform: capitalize;
 }
 
 .main {
   min-height: 70px;
-  background-color: rgb(38, 116, 112);
+  padding: 10px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px 50px;
+  background-color: rgb(34, 31, 31);
 }
 
 .list {
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 600;
   flex-wrap: wrap;
-    
+  text-transform: uppercase;
 }
 
 .list-li + .list-li {
   margin-left: 30px;
-  flex: 1;
 }
+
 .list-li {
   display: inline;
   padding: 10px 0;
 }
 
 .btn {
-  padding: 10px 30px;
-  background-color: transparent;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 0.7em;
   border: 2px solid rgb(180, 170, 170);
-  border-radius: 10px;
-  color: rgb(180, 170, 170);
-  font-size: 0.8em;
+  font-weight: bold;
+  background-color: transparent;
+  color: inherit;
   display: inline-block;
+  text-transform: uppercase;
 }
